@@ -6,7 +6,7 @@ function trippleValue(a,b) {
   return (a===b ? (a+b)*3 : a+b)
 
 }
-console.log(trippleValue(3,3))
+// console.log(trippleValue(3,3))
 
 /*
 2)
@@ -15,7 +15,7 @@ Create a function to check two given numbers and return true if one of the numbe
 function sumNumber(a,b) {
   return ((a===50 || b===50 ) || a+b === 50) ? true : false
   }
-console.log(sumNumber(50,5))
+// console.log(sumNumber(50,5))
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
@@ -23,7 +23,7 @@ Create a function to remove a character at the specified position of a given str
 function specifiedPosition(givenString) {
    return (givenString.slice(0, -5))
   }
-  console.log(specifiedPosition("I am Hafiz and what"))
+  // console.log(specifiedPosition("I am here and what"))
 
 /*
 
@@ -45,7 +45,7 @@ function Largestinteger(x,y,z)  {
   }
   return max_val;
 }
-console.log (Largestinteger(2,6,99))
+// console.log (Largestinteger(2,6,99))
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
@@ -54,18 +54,19 @@ Create a function to check whether two numbers are in range 40..60 or in the ran
 function rangNumber(x,y) {
   return ((x< 60 & x>40) || (x< 100 & x>70) & (y<60  & y>40) || (y< 100 & x>70)) ? true : false 
   }
-  console.log(rangNumber(75,46))
+  // console.log(rangNumber(75,46))
+  // console.log(rangNumber(40,30))
 
 /*
 6) 
 
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
-// function positiveNumber(creatAnewString) {
-//   return(creatAnewString.repeat(4))
-//   }
+function positiveNumber(creatAnewString) {
+  return(creatAnewString.repeat(4))
+  }
 
-//   console.log(positiveNumber("Hi am from..!"))
+  console.log(positiveNumber("Hi am from..!"))
 /*
 
 7)
@@ -75,12 +76,12 @@ function cityName(x) {
     
   return (x.includes("Los") || x.includes("New")  ? x : "")
   }
-  console.log(cityName("NewZealand"))
+  // console.log(cityName("NewZealand"))
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
-const isabel= [0,8,1]
+const isabel= [6,8,1]
 function threeElementSum(arr) {
   const reducer = (a, b) => a + b;
  return (arr.reduce(reducer))
@@ -98,7 +99,7 @@ function testOfAnArray(arr) {
   }
 
   }
-console.log(testOfAnArray(isabel))
+// console.log(testOfAnArray(isabel))
 
 // 10)
 
@@ -110,7 +111,7 @@ function arrayDoesNot(arr) {
   }
 
   }
-  console.log(arrayDoesNot(isabel))
+  // console.log(arrayDoesNot(isabel))
 
 // 11)
 
@@ -120,7 +121,7 @@ const plorp = ["bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "
 const longest = plorp.reduce(function(a, b) { 
   return a.length > b.length ? a : b
 }, '');
-console.log(longest);
+// console.log(longest);
 // 12)
 
 // Create a function to find the types of a given angle.
@@ -145,7 +146,7 @@ function angle_Type(angle) {
   return "Straight angle.";
 }
 }
-console.log(angle_Type(165))
+// console.log(angle_Type(165))
 
 
 // 13)
@@ -155,7 +156,7 @@ const longestarray1 = [1, 9, 2,8,9,3,15];
 function greatesteLElement(arr) { 
   return (Math.max(...arr))
  }
- console.log(greatesteLElement(longestarray1))
+//  console.log(greatesteLElement(longestarray1))
 
 // 14)
 
@@ -170,7 +171,7 @@ function max_even(arra) {
       return arra[i];
     }
   }
-  console.log(max_even([1,5,7,98,9,15,101]))
+  // console.log(max_even([1,5,7,98,9,15,101]))
 
 // 16)
 
@@ -180,7 +181,7 @@ function positiveandNegative(x,y) {
   return (x<0 && y>0) || (x>0 && y<0) ? "this is negative and positive" : "nop"
   }
   
-console.log(positiveandNegative(5,5))
+// console.log(positiveandNegative(5,5))
 
 // 17)
 
@@ -189,14 +190,14 @@ function capitalize(s)
 {
     return s.charAt(0).toLowerCase(0) + s.substring(1);;
 }
-  console.log(capitalize("HI i am"))
+  // console.log(capitalize("HI i am"))
 // 18)
 
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 function range50To80 (x,y) {
   return ((x+y) <80 || (x+y) > 60 ? 65 : 80)
   }
-  console.log(range50To80(30,30))
+  // console.log(range50To80(30,30))
 // 19)
 
 // Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
@@ -213,7 +214,7 @@ function range50To80 (x,y) {
 // 34 has four factors: 1, 2, 17, and 34.
 // this would be "34".
 function numberToString(x) {
-  
+
   }
 
 // 20)
@@ -225,4 +226,4 @@ function acronym(text) {
     }, '');
 }
 
-console.log(acronym('European Union'));
+// console.log(acronym('European Union'));
